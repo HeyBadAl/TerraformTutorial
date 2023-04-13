@@ -6,6 +6,6 @@ echo "<h1>Deployed via Terraform</h1>" | sudo tee /var/www/html/index.html
 sudo yum -y install docker 
 sudo systemctl start docker 
 
-sudo usermod -aG docker ec2-user 
+sudo usermod -aG docker ec2-user
 
 sudo docker run -d -p 8080:80 nginx
